@@ -23,6 +23,7 @@ public class mergeSort {
     }
 
     public static void conquer(int arr[], int startIndex, int mid, int endIndex) {
+      // o(n)
         int merged[] = new int[endIndex - startIndex + 1];
 
         int idx1 = startIndex;
@@ -50,6 +51,7 @@ public class mergeSort {
     }
 
     public static void divide(int[] arr, int startIndex, int endIndex) {
+      // O(logn)
         if (startIndex >= endIndex) {
             return;
         }
@@ -62,4 +64,4 @@ public class mergeSort {
     }
 }
 
-// time complexity O(n logn)
+// time complexity O(nlogn)
